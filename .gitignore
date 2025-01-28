@@ -1,0 +1,10 @@
+# Airflow-related
+logs/
+*.db
+*.csv
+__pycache__/
+
+# Python-specific
+*.pyc
+*.pyo
+*.DS_Store
