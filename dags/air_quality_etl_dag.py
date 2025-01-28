@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from extract import extract_data
 from transform import transform_data
 from load import load_data
-from plot import plot_all_graphs  # Використовуємо функцію, яка запускає всі графіки
+from plot import plot_all_graphs
 
 default_args = {
     'owner': 'airflow',
@@ -41,7 +41,7 @@ with DAG(
 
     plot_task = PythonOperator(
         task_id='plot',
-        python_callable=plot_all_graphs,  # Використовуємо функцію, яка виконує всі графіки
+        python_callable=plot_all_graphs,
     )
 
     extract_task >> transform_task >> load_task >> plot_task
