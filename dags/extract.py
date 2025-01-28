@@ -30,7 +30,7 @@ def extract_data(**kwargs):
     """
 
     
-    api_key = 'ea7eacb87a775d6b2bf8a652e1c970de11365860'
+    api_key = 'api_key'
     cities = ['Amsterdam', 'Rotterdam', 'The Hague', 'Utrecht', 'Eindhoven', 
               'Groningen', 'Breda', 'Maastricht', 'Delft', 'Arnhem']
     base_url = 'https://api.waqi.info/feed/{city}/?token={api_key}'
